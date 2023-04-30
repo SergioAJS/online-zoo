@@ -1,0 +1,2365 @@
+@font-face {
+    font-family: 'Roboto-bold';
+    src: url("../../assets/fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto-medium';
+    src: url("../../assets/fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto-regular';
+    src: url("../../assets/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto-light';
+    src: url("../../assets/fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto-thin';
+    src: url("../../assets/fonts/Roboto-Thin.ttf");
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.container {
+    margin-left: 15px;
+    width: 73.5%;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+.button-oval {
+    width: 298px;
+    height: 54px;
+    font-family: 'Roboto-medium', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    line-height: 140%;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 25px;
+    border: none;
+    z-index: 20;
+}
+
+.button-oval:hover {
+    background: #E47209;
+    cursor: pointer;
+}
+
+.button-oval:active {
+    background: #4B9200;
+    transition: all 0.5s;
+}
+
+.button-square {
+    width: 298px;
+    height: 54px;
+    font-family: 'Roboto-medium', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    line-height: 140%;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 5px;
+    border: none;
+}
+
+.button-square:hover {
+    background: #E47209;
+    cursor: pointer;
+}
+
+.button-square:active {
+    background: #4B9200;
+    transition: all 0.5s;
+}
+
+/* HEADER STYLE */
+
+.header {
+    background-color: black;
+    font-family: 'Roboto-medium', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: 16px;
+    line-height: 140%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 82px 1fr 105px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 3.5px 4.75px 3.5px 4.75px;
+    cursor: pointer;
+}
+
+.logo a {
+    color: white;
+}
+
+.logo-text {
+    font-family: 'Roboto-regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 19px;
+    line-height: 120%;
+	font-weight: inherit;
+    margin: 0;
+}
+
+.icon-logo:before {
+    background-image: url('../../assets/icons/bamboo.svg');
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 10.5px;
+    width: 11px;
+    height: 18px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header_nav {
+    display: none;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding-left: 63px;
+    gap: 58px;
+}
+
+.nav li a {
+    color: white;
+}
+
+.nav li a:focus {
+    color: #F9804B;
+    transition: all 0.5s;
+}
+
+.nav li a:hover {
+    cursor: pointer;
+    color: #F9804B;
+    transition: all 0.5s;
+}
+
+.nav li a:active {
+    color: #FE9013;
+}
+
+.donate {
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.author a {
+    color: white;
+}
+
+.author a:focus {
+    color: #F9804B;
+    transition: all 0.5s;
+}
+
+.author a:hover {
+    cursor: pointer;
+    color: #F9804B;
+    transition: all 0.5s;
+}
+
+.author a:active {
+    color: #FE9013;
+}
+
+.header_burger {
+    display: none;
+}
+
+/* Pick and feed a friend */
+
+.panda1000 {
+    display: none;
+}
+
+.panda640 {
+    display: none;
+}
+
+.panda320 {
+    display: none;
+}
+
+.feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+}
+
+.donate-title {
+    font-family: 'Roboto-regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    color: white;
+    margin-top: 33px;
+    margin-bottom: 9px;
+}
+
+.description {
+    font-family: 'Roboto-medium', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    color: white;
+    margin: 0;
+}
+
+.donation-information {
+    font-family: 'Roboto-regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 130%;
+    color: #FE9013;
+    margin-top: 42px;
+    margin-bottom: 60px;
+}
+
+.pick-friend {
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.52);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    margin-bottom: 180px;
+}
+
+.pick-friend-container {
+    width: 976px;
+}
+
+.pick-title {
+    font-family: 'Roboto-regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: center;
+    color: #FE9013;
+    margin-top: 42px;
+    margin-right: 9px;
+    margin-bottom: 20px;
+}
+
+.joy {
+    font-family: 'Roboto-regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    line-height: 120%;
+    color: #333B41;
+    margin: 0;
+}
+
+.friend {
+    display: flex;
+    margin-top: 60px;
+    margin-left: 215px;
+    margin-bottom: 46px;
+}
+
+.friend-amount {
+    display: flex;
+    flex-direction: column;
+    margin-top: 105px;
+}
+
+.friends-number {
+    font-family: 'Roboto-medium', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 72px;
+    line-height: 80%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+}
+
+.diet {
+    font-family: 'Roboto-regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #333B41;
+}
+
+.multiply {
+    margin-left: 11px;
+    margin-right: 64px;
+    margin-top: 130px;
+}
+
+.amount {
+    font-family: 'Roboto-regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    color: black;
+    margin: 0;
+}
+
+.linear {
+    height: 122px;
+    width: 100%;
+    margin: auto;
+}
+
+.strip {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 27px;
+    background-color:#404950;
+    border-radius: 2px;
+    margin-top: 17px;
+}
+
+.radio-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio-container::before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 93%;
+    margin: 12px 28px 12px 33px;
+    background: #72828E;
+}
+
+.sum {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 74px;
+    z-index: 5;
+}
+
+.sum input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #FFEE2E;
+    border-radius: 100%;
+    background-color: #FFEE2E;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.sum input:checked::before {
+    background-color: transparent;
+    border: none;
+    background-image: url('../../assets/icons/roller_icon.svg');
+    content: '';
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    top: -7px;
+    right: 17.12px
+}
+
+.sum label {
+    font-family: 'Roboto-medium', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 26px;
+    line-height: 140%;
+    color: #333B41;
+    cursor: pointer;
+}
+
+.sum input:checked+label {
+    color: #FE9013;
+}
+
+.choose-amount {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-value {
+    display: flex;
+    align-items: center;
+    width: 268px;
+    height: 54px;
+    border: 1px solid #929699;
+    border-radius: 2px;
+}
+
+.input-value .suffix {
+    padding-right: 10px;
+    font-family: 'Roboto-regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #929699;
+}
+
+.input-value input {
+    flex-grow: 1;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-family: 'Roboto-regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    color: #929699;
+}
+
+.input-value input::placeholder {
+    font-family: 'Roboto-regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    color: #929699;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.value::-webkit-outer-spin-button,
+.value::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.value[type=number] {
+  -moz-appearance: textfield;
+}
+
+.radio {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 31px;
+    margin-top: 25px;
+}
+
+.month {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.once {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #F9804B;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.radio input:checked {
+    background-color: #4B9200;
+    border: 1px solid #4B9200;
+}
+
+.radio label {
+    font-family: 'Roboto-regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    color: #333B41;
+    cursor: pointer;
+}
+
+.share {
+    font-family: 'Roboto-regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    color: #333B41;
+    margin-top: 30px;
+    margin-bottom: 62px;
+}
+
+/* FOOTER STYLE */
+
+.social-mobile {
+    display: none;
+}
+
+.logo-text-mobile {
+    display: none;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #111115;
+    height: 443px;
+}
+
+.wrapper1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 36px;
+}
+
+.wrapper1 .logo {
+    height: 43px;
+    width: 75px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 68px;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe-title {
+    font-family: 'Roboto-regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    font-weight: inherit;
+    line-height: 120%;
+    color: white;
+    margin: 0;
+    margin-bottom: 14px;
+}
+
+#email {
+    width: 205px;
+    height: 18px;
+    border: 1px solid #F9804B;
+    border-radius: 2px;
+    background-color: #111115;
+    margin-right: 6px;
+    font-family: 'Roboto-regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    color: #BDBDBD;
+    padding: 10px;
+}
+
+#email::placeholder {
+    font-family: 'Roboto-regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    color: #BDBDBD;
+}
+
+#email:focus:invalid {
+    border: none;
+    border: 1px solid #D31414;
+    color: #BDBDBD;
+    outline: none;
+}
+
+#email:focus {
+    /* border: none; */
+    border: 1px solid #4B9200;
+    color: #BDBDBD;
+    outline: none;
+}
+
+#submit {
+    width: 129px;
+    height: 42px;
+    background: #F1F3F2;
+    border: 1px solid #333B41;
+    border-radius: 5px;
+    font-family: 'Roboto-regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    color: black;
+    cursor: pointer;
+}
+
+#input:focus-within:invalid #submit {
+    border: 1px solid #D31414;
+    color: #D31414;
+}
+
+#input:invalid #submit:active {
+    border: 1px solid #4B9200;
+    color: #4B9200;
+}
+
+#submit:active {
+    border: 1px solid #4B9200;
+    color: #4B9200;
+}
+
+.wrapper2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 47px;
+}
+
+.social-tablet {
+    display: none;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-left: 38px;
+    font-family: 'Roboto-regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.social a {
+    color: white;
+}
+
+.facebook {
+    position: relative;
+}
+
+.facebook::before {
+    position: absolute;
+    content: '';
+    background-color: rgba(196, 196, 196, 0.5);
+    bottom: 0px;
+    left: -37px;
+    width: 26px;
+    height: 26px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.facebook::after {
+    position: absolute;
+    content: '';
+    background-image: url('../../assets/icons/FB.svg');
+    bottom: 5px;
+    left: -28px;
+    width: 10px;
+    height: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.facebook:active {
+    color: #4B9200;
+}
+
+.facebook:active::before {
+    background-color: #4B9200;
+}
+
+.twitter {
+    position: relative;
+}
+
+.twitter::before {
+    position: absolute;
+    content: '';
+    background-color: rgba(196, 196, 196, 0.5);
+    bottom: 0px;
+    left: -37px;
+    width: 26px;
+    height: 26px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.twitter::after {
+    position: absolute;
+    content: '';
+    background-image: url('../../assets/icons/Twit.svg');
+    bottom: 5px;
+    left: -31px;
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.twitter:active {
+    color: #4B9200;
+}
+
+.twitter:active::before {
+    background-color: #4B9200;
+}
+
+.inst {
+    position: relative;
+}
+
+.inst::before {
+    position: absolute;
+    content: '';
+    background-color: rgba(196, 196, 196, 0.5);
+    bottom: -1px;
+    left: -37px;
+    width: 26px;
+    height: 26px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.inst::after {
+    position: absolute;
+    content: '';
+    background-image: url('../../assets/icons/Inst.svg');
+    bottom: 5px;
+    left: -32px;
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.inst:active {
+    color: #4B9200;
+}
+
+.inst:active::before {
+    background-color: #4B9200;
+}
+
+.yt {
+    position: relative;
+}
+
+.yt::before {
+    position: absolute;
+    content: '';
+    background-color: rgba(196, 196, 196, 0.5);
+    bottom: -1px;
+    left: -37px;
+    width: 26px;
+    height: 26px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.yt::after {
+    position: absolute;
+    content: '';
+    background-image: url('../../assets/icons/YT.svg');
+    bottom: 6px;
+    left: -33px;
+    width: 18px;
+    height: 13px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.yt:active {
+    color: #4B9200;
+}
+
+.yt:active::before {
+    background-color: #4B9200;
+}
+
+.links {
+    display: flex;
+    gap: 58px;
+    font-family: 'Roboto-regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 120px;
+}
+
+.links li a {
+    color: white;
+}
+
+.links li a:focus {
+    color: #F9804B;
+    transition: all 0.5s;
+}
+
+.links li a:hover {
+    cursor: pointer;
+    color: #F9804B;
+    transition: all 0.5s;
+}
+
+.links li a:active {
+    color: #FE9013;
+}
+
+/* .about-foot {
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+} */
+
+.copy {
+    font-family: 'Roboto-thin', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 130%;
+    color: white;
+}
+
+.copyright {
+    margin: 0;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1150px) {
+
+    .panda320 {
+        display: none;
+    }
+
+    .radio-container::before {
+        width: 92%;
+    }
+}
+
+@media screen and (max-width: 1149px) and (min-width: 1001px) {
+
+    .panda320 {
+        display: none;
+    }
+
+    .radio-container::before {
+        width: 91%;
+    }
+
+    .social-mobile {
+        display: none;
+    }
+
+    .logo-text-mobile {
+        display: none;
+    }
+}
+
+/* 1000PX */
+
+
+@media screen and (max-width: 1000px) and (min-width: 835px) {
+
+    /* HEADER */
+
+    .container {
+        width: 95.5%;
+    }
+    .nav {
+        gap: 48px;
+    }
+
+    /* Pick and feed a friend */
+
+    .panda {
+        display: none;
+    }
+
+    .panda640 {
+        display: none;
+    }
+
+    .panda320 {
+        display: none;
+    }
+
+    .panda1000 {
+        display: block;
+    }
+
+    .donate-title {
+        margin-top: 40px;
+        margin-right: 172px;
+        margin-bottom: 30px;
+    }
+
+    .pick-friend {
+        margin-bottom: 29px;
+    }
+
+    .pick-friend-container {
+        width: 100%;
+    }
+
+    .donation-information {
+        margin-bottom: 42px;
+    }
+
+    .pick-title {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .joy {
+        text-align: center;
+    }
+
+    .friend {
+        margin-left: 21%;
+    }
+
+    .amount {
+        margin-left: 65px;
+    }
+
+    .donate1 {
+        display: none;
+    }
+
+    .linear {
+        width: 86%;
+    }
+
+    /* .radio-container {
+        width: 900px;
+    } */
+
+    .radio-container::before {
+        width: 91%;
+        margin: 12px 10px 12px 33px;
+    }
+
+    .share {
+        margin-bottom: 45px;
+    }
+
+    /* FOOTER */
+
+    .social-mobile {
+        display: none;
+    }
+
+    .logo-text-mobile {
+        display: none;
+    }
+
+    .subscribe {
+        margin-right: 32px;
+    }
+
+    .links {
+        gap: 48px;
+    }
+}
+
+@media screen and (max-width: 835px) and (min-width: 640px) {
+
+    .panda320 {
+        display: none;
+    }
+
+    .container {
+        width: 93.75%;
+        margin: 0;
+    }
+
+        /* HEADER */
+
+
+    .desktop-nav .nav {
+        gap: 25px;
+    }
+    /* .header {
+        position: fixed;
+        width: 100%;
+        height: 34px;
+        z-index: 25;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .author {
+        display: none;
+    }
+
+    .logo {
+        border: none;
+    }
+
+    .logo-text {
+        font-size: 12.2899px;
+    }
+
+    .icon-logo {
+        padding-left: 0;
+    }
+
+    .icon-logo:before {
+        width: 9px;
+        height: 15px;
+        top: 15px;
+        left: 3px;
+    }
+
+    .header_burger {
+        display: block;
+        position: relative;
+        width: 18px;
+        height: 15px;
+        cursor: pointer;
+    }
+
+    .burger_line {
+        background-color: white;
+        display: block;
+        height: 2px;
+        width: 18px;
+        position: relative;
+        top: 4px;
+        border-radius: 2px;
+    }
+
+    .burger_line::before,
+    .burger_line::after {
+        background-color: white;
+        display: block;
+        content: '';
+        position: absolute;
+        transition: 0.5s;
+        width: 100%;
+        height: 100%;
+        border-radius: 2px;
+    }
+
+    .burger_line::before {
+        top: 4px;
+    }
+
+    .burger_line::after {
+        bottom: 4px;
+    } */
+
+        /* Pick and feed a friend */
+
+
+    .panda {
+        display: none;
+    }
+
+    .panda1000 {
+        display: block;
+    }
+
+    .panda320 {
+        display: none;
+    }
+
+    .panda640 {
+        display: none;
+        margin-top: 34px;
+    }
+
+    .donate-title {
+        font-size: 24px;
+        line-height: 120%;
+        margin-top: 30px;
+        margin-right: 0;
+        margin-bottom: 19px;
+    }
+
+    .donation-information {
+        margin-top: 30px;
+        margin-bottom: 28px;
+    }
+
+    .pick-friend {
+        margin-bottom: 45px;
+    }
+
+    .pick-friend-container {
+        width: 95%;
+    }
+
+    .pick-title {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .friend {
+        margin-left: 12px;
+        margin-top: 50px;
+        margin-bottom: 38px;
+    }
+
+    .amount {
+        margin-left: -5px;
+        margin-bottom: -10px;
+    }
+
+    .donate1 {
+        display: none;
+    }
+
+    .donate2 {
+        display: none;
+    }
+
+    .linear {
+        width: 105.2%;
+        margin-left: -15px;
+        height: 125px;
+    }
+
+    .radio-container::before {
+        width: 90.5%;
+    }
+
+    .input-value {
+        width: 178px;
+        height: 40px;
+    }
+
+    .input-value input {
+        padding-left: 5px;
+    }
+
+    .radio {
+        margin-top: 29.5px;
+    }
+
+    .share {
+        margin-bottom: 31px;
+    }
+
+        /* FOOTER STYLE */
+
+    .social-mobile {
+        display: none;
+    }
+
+    .logo-text-mobile {
+        display: none;
+    }
+
+    .footer {
+        height: 282px;
+    }
+
+    .wrapper1 {
+        margin-top: 12px;
+        margin-bottom: 30px;
+    }
+
+    .subscribe {
+        display: none;
+    }
+
+    .footer .logo {
+        border: 1px solid white;
+        padding-left: 4.75px;
+        padding-top: 1px;
+        padding-bottom: 5px;
+    }
+
+    .footer .logo-text {
+        font-size: 19px;
+    }
+
+    .footer .icon-logo:before {
+        top: 23px;
+        left: 12.5px;
+        width: 11px;
+        height: 18px;
+    }
+
+    .button-container {
+        gap: 32px;
+    }
+
+    .wrapper2 {
+        margin-top: 0px;
+    }
+
+    .links {
+        margin: 0;
+        gap: 37px;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .social-tablet {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .facebook {
+        height: 28px;
+    }
+
+    .facebook::before {
+        top: 0;
+        right: 0;
+        left: -27px;
+    }
+
+    .facebook::after {
+        bottom: 8px;
+        left: -18px;
+    }
+
+    .twitter {
+        height: 28px;
+    }
+
+    .twitter::before {
+        top: 0;
+        right: 0;
+        left: -27px;
+    }
+
+    .twitter::after {
+        bottom: 6px;
+        left: -22px;
+    }
+
+    .inst {
+        height: 28px;
+    }
+
+    .inst::before {
+        top: 0;
+        right: 0;
+        left: -27px;
+    }
+
+    .inst::after {
+        bottom: 7px;
+        left: -22px;
+    }
+
+    .yt {
+        height: 28px;
+    }
+
+    .yt::before {
+        top: 0;
+        right: 0;
+        left: -27px;
+    }
+
+    .yt::after {
+        bottom: 8px;
+        left: -23px;
+    }
+}
+
+@media screen and (max-width: 740px) and (min-width: 640px) {
+
+    .radio-container::before {
+        width: 89%;
+    }
+}
+
+@media screen and (max-width: 640px) and (min-width: 321px) {
+
+    .panda {
+        display: none;
+    }
+
+    .panda1000 {
+        display: none;
+    }
+
+    .panda320 {
+        display: none;
+    }
+
+    .panda640 {
+        display: block;
+    }
+
+    .container {
+        width: 93.75%;
+        margin: 0;
+    }
+
+        /* HEADER */
+
+    .header {
+        position: fixed;
+        width: 100%;
+        height: 34px;
+        z-index: 25;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .author {
+        display: none;
+    }
+
+    .logo {
+        border: none;
+    }
+
+    .logo-text {
+        font-size: 12.2899px;
+    }
+
+    .icon-logo {
+        padding-left: 0;
+    }
+
+    .icon-logo:before {
+        width: 9px;
+        height: 15px;
+        top: 15px;
+        left: 3px;
+    }
+
+        /* BURGER MENU */
+
+    .transClass {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color:rgba(0, 0, 0, 0.35);
+        z-index: 10;
+        /* transform: translateX(100%); */
+        transition: 0.3s all linear;
+    }
+
+    .header_burger {
+        display: block;
+        position: relative;
+        width: 18px;
+        height: 15px;
+        cursor: pointer;
+    }
+
+    .burger_line {
+        background-color: white;
+        display: block;
+        height: 2px;
+        width: 18px;
+        position: relative;
+        top: 4px;
+        border-radius: 2px;
+    }
+
+    .burger_line::before,
+    .burger_line::after {
+        background-color: white;
+        display: block;
+        content: '';
+        position: absolute;
+        transition: 0.5s;
+        width: 100%;
+        height: 100%;
+        border-radius: 2px;
+    }
+
+    .burger_line::before {
+        top: 4px;
+    }
+
+    .burger_line::after {
+        bottom: 4px;
+    }
+
+    .header_nav {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        /* background-color:rgba(0, 0, 0, 0.25); */
+        transform: translateX(100%);
+        transition: 0.3s all linear;
+    }
+
+    .header_nav-active {
+        transform: translateX(0);
+    }
+
+    .header_links {
+        position: absolute;
+        list-style: none;
+        background-color: white;
+        box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
+        width: 100%;
+        height: 319px;
+        padding-top: 10px;
+        /* right: 0; */
+        top: -16px;
+        padding-inline-start: 10px;
+    }
+
+    .logo-close-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 97%;
+        margin-bottom: 30.4px;
+    }
+
+    .header_links .logo {
+        width: 57px;
+        height: 34.5px;
+        border: 0.8px solid #FE9013;
+        border-radius: 2px;
+        padding: 2.8px 3.8px 2.8px 3.8px;
+    }
+
+    .header_links .logo a {
+        color: #FE9013;
+    }
+
+    .header_links .logo-text {
+        font-size: 15.2116px;
+        line-height: 120%;
+    }
+
+    .header_links .icon-logo:before {
+        background-image: url('../../assets/icons/bamboo-orange.svg');
+        top: 19px;
+        left: 7px;
+    }
+
+    .header_item {
+        margin-bottom: 15px;
+    }
+
+    .header_item:last-child {
+        margin-bottom: 0;
+    }
+
+    .header_link {
+        text-decoration: none;
+        color: #333B41;
+    }
+
+    .header_link:hover {
+        color: #FE9013;
+    }
+
+    .header_link:active {
+        color: #4B9200;
+    }
+
+    .header_nav-close {
+        width: 18px;
+        height: 18px;
+        position: relative;
+        /* top: 14px;
+        right: 136px; */
+        z-index: 11;
+        cursor: pointer;
+    }
+
+    .header_nav-close-line {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #FE9013;
+        position: absolute;
+        top: 50%;
+
+    }
+
+    .header_nav-close-line:first-child {
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    .header_nav-close-line:last-child {
+        transform: translateY(-50%) rotate(-45deg);
+    }
+
+
+    /* Pick and feed a friend */
+
+    .donate-title {
+        font-size: 24px;
+        line-height: 120%;
+    }
+
+    .description {
+        font-size: 16px;
+        line-height: 140%;
+        margin: auto;
+        text-align: left;
+    }
+
+    .pick-title {
+        margin-left: 7px;
+    }
+
+    .joy {
+        text-align: center;
+    }
+
+    .friend {
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: auto;
+        margin-left: 13px;
+        margin-bottom: 35px;
+        margin-top: 52px;
+    }
+
+    .radio-container {
+        width: 91.5%;
+        margin-left: 25px;
+    }
+
+    .radio-container::before {
+        width: 95%;
+        margin-left: 10px;
+    }
+
+    .donate1,
+    .donate2,
+    .donate3 {
+        display: none;
+    }
+
+    .sum {
+        width: 30px;
+    }
+
+    .sum input:checked::before {
+        right: -5px;
+    }
+
+    /* FOOTER STYLE */
+
+    .social-mobile {
+        display: none;
+    }
+
+    .logo-text-mobile {
+        display: none;
+    }
+
+    .footer {
+        height: 282px;
+    }
+
+    .wrapper1 {
+        margin-top: 12px;
+        margin-bottom: 30px;
+    }
+
+    .subscribe {
+        display: none;
+    }
+
+    .footer .logo {
+        border: 1px solid white;
+        padding-left: 4.75px;
+        padding-top: 1px;
+        padding-bottom: 5px;
+    }
+
+    .footer .logo-text {
+        font-size: 19px;
+    }
+
+    .footer .icon-logo:before {
+        top: 23px;
+        left: 12.5px;
+        width: 11px;
+        height: 18px;
+    }
+
+    .button-container {
+        gap: 32px;
+    }
+
+    .wrapper2 {
+        margin-top: 0px;
+    }
+
+    .links {
+        margin: 0;
+        gap: 37px;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .social-tablet {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .facebook {
+        height: 28px;
+    }
+
+    .facebook::before {
+        top: 0;
+        right: 0;
+        left: -27px;
+    }
+
+    .facebook::after {
+        bottom: 8px;
+        left: -18px;
+    }
+
+    .twitter {
+        height: 28px;
+    }
+
+    .twitter::before {
+        top: 0;
+        right: 0;
+        left: -27px;
+    }
+
+    .twitter::after {
+        bottom: 6px;
+        left: -22px;
+    }
+
+    .inst {
+        height: 28px;
+    }
+
+    .inst::before {
+        top: 0;
+        right: 0;
+        left: -27px;
+    }
+
+    .inst::after {
+        bottom: 7px;
+        left: -22px;
+    }
+
+    .yt {
+        height: 28px;
+    }
+
+    .yt::before {
+        top: 0;
+        right: 0;
+        left: -27px;
+    }
+
+    .yt::after {
+        bottom: 8px;
+        left: -23px;
+    }
+}
+
+@media screen and (max-width: 610px) and (min-width: 320px) {
+
+    .panda320 {
+        display: none;
+    }
+
+    /* Pick and feed a friend */
+
+
+    .friend {
+        justify-content: center;
+    }
+
+    .friend-amount {
+        margin-top: 50px;
+    }
+
+    .multiply {
+        margin-top: 70px;
+        margin-right: 5px;
+    }
+
+    .animal-friend img {
+        width: 100px;
+        margin-top: 30px;
+    }
+
+    .radio-container {
+        margin-left: 4%;
+    }
+
+    .sum label {
+        font-size: 13px;
+        line-height: 140%;
+    }
+
+
+        /* FOOTER */
+
+    .social-mobile {
+        display: none;
+    }
+
+    .logo-text-mobile {
+        display: none;
+    }
+
+    .footer {
+        height: 100%;
+    }
+
+    .wrapper2 {
+        flex-direction: column-reverse;
+        gap: 5px;
+    }
+
+    .footer-nav {
+        align-self: center;
+    }
+
+    .footer-button .button-square{
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 440px) and (min-width: 320px) {
+    .radio-container::before {
+        width: 93%;
+    }
+}
+
+@media screen and (max-width: 320px) and (min-width: 200px) {
+
+    .panda {
+        display: none;
+    }
+
+    .panda1000 {
+        display: none;
+    }
+
+    .panda640 {
+        display: none;
+    }
+
+    .panda320 {
+        display: block;
+        margin-top: 33px;
+    }
+
+    .container {
+        width: 93.75%;
+        margin: 0;
+    }
+
+        /* HEADER */
+
+    .header {
+        position: fixed;
+        width: 100%;
+        height: 34px;
+        z-index: 25;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .author {
+        display: none;
+    }
+
+    .logo {
+        border: none;
+    }
+
+    .logo-text {
+        font-size: 12.2899px;
+    }
+
+    .icon-logo {
+        padding-left: 0;
+    }
+
+    .icon-logo:before {
+        width: 9px;
+        height: 15px;
+        top: 15px;
+        left: 3px;
+    }
+
+    /* BURGER MENU */
+
+    .transClass {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color:rgba(0, 0, 0, 0.35);
+        z-index: 10;
+        /* transform: translateX(100%); */
+        transition: 0.3s all linear;
+    }
+
+    .header_burger {
+        display: block;
+        position: relative;
+        width: 18px;
+        height: 15px;
+        cursor: pointer;
+    }
+
+    .burger_line {
+        background-color: white;
+        display: block;
+        height: 2px;
+        width: 18px;
+        position: relative;
+        top: 4px;
+        border-radius: 2px;
+    }
+
+    .burger_line::before,
+    .burger_line::after {
+        background-color: white;
+        display: block;
+        content: '';
+        position: absolute;
+        transition: 0.5s;
+        width: 100%;
+        height: 100%;
+        border-radius: 2px;
+    }
+
+    .burger_line::before {
+        top: 4px;
+    }
+
+    .burger_line::after {
+        bottom: 4px;
+    }
+
+    .header_nav {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        /* background-color:rgba(0, 0, 0, 0.25); */
+        transform: translateX(100%);
+        transition: 0.3s all linear;
+    }
+
+    .header_nav-active {
+        transform: translateX(0);
+    }
+
+    .header_links {
+        position: absolute;
+        list-style: none;
+        background-color: white;
+        box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
+        width: 100%;
+        height: 319px;
+        padding-top: 10px;
+        /* right: 0; */
+        top: -16px;
+        padding-inline-start: 10px;
+    }
+
+    .logo-close-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 97%;
+        margin-bottom: 30.4px;
+    }
+
+    .header_links .logo {
+        width: 57px;
+        height: 34.5px;
+        border: 0.8px solid #FE9013;
+        border-radius: 2px;
+        padding: 2.8px 3.8px 2.8px 3.8px;
+    }
+
+    .header_links .logo a {
+        color: #FE9013;
+    }
+
+    .header_links .logo-text {
+        font-size: 15.2116px;
+        line-height: 120%;
+    }
+
+    .header_links .icon-logo:before {
+        background-image: url('../../assets/icons/bamboo-orange.svg');
+        top: 19px;
+        left: 7px;
+    }
+
+    .header_item {
+        margin-bottom: 15px;
+    }
+
+    .header_item:last-child {
+        margin-bottom: 0;
+    }
+
+    .header_link {
+        text-decoration: none;
+        color: #333B41;
+    }
+
+    .header_link:hover {
+        color: #FE9013;
+    }
+
+    .header_link:active {
+        color: #4B9200;
+    }
+
+    .header_nav-close {
+        width: 18px;
+        height: 18px;
+        position: relative;
+        /* top: 14px;
+        right: 136px; */
+        z-index: 11;
+        cursor: pointer;
+    }
+
+    .header_nav-close-line {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #FE9013;
+        position: absolute;
+        top: 50%;
+
+    }
+
+    .header_nav-close-line:first-child {
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    .header_nav-close-line:last-child {
+        transform: translateY(-50%) rotate(-45deg);
+    }
+
+
+                /* Pick and feed a friend */
+
+    .donate-title {
+        font-size: 24px;
+        line-height: 120%;
+        margin-bottom: 17px;
+    }
+
+    .description {
+        font-size: 16px;
+        line-height: 140%;
+        text-align: left;
+    }
+
+    .donation-information {
+        font-size: 24px;
+        line-height: 120%;
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+
+    .pick-title {
+        font-size: 24px;
+        line-height: 120%;
+        margin-top: 22px;
+        margin-left: 7px;
+        margin-bottom: 10px;
+    }
+
+    .joy {
+        font-size: 16px;
+        line-height: 140%;
+        margin-left: 1px;
+        text-align: center;
+    }
+
+    .friend {
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: auto;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+
+    .friends-number {
+        font-size: 40.6015px;
+        line-height: 80%;
+        margin-bottom: 7px;
+    }
+
+    .diet {
+        font-size: 9.02255px;
+        line-height: 140%;
+    }
+
+    .friend-amount {
+        margin-top: 68px;
+    }
+
+    .multiply img {
+        width: 8px;
+        height: 8px;
+    }
+
+    .multiply {
+        margin-top: 76px;
+        margin-right: 17px;
+        margin-left: 5px;
+    }
+
+    .animal-friend img {
+        width: 165px;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+    .amount {
+        margin-bottom: 7px;
+    }
+
+    .linear {
+        height: 40px;
+    }
+
+    .strip {
+        margin: 0;
+        height: 13.5px;
+    }
+
+    .radio-container {
+        width: 95%;
+        margin-left: 2%;
+    }
+
+    .radio-container::before {
+        width: 90.5%;
+        margin-top: 6px;
+        margin-left: 13px;
+    }
+
+    .donate1,
+    .donate2,
+    .donate3 {
+        display: none;
+    }
+
+    .sum {
+        width: 25px;
+    }
+
+    .sum label {
+        font-size: 13px;
+        line-height: 140%;
+    }
+
+    .sum input {
+        width: 5px;
+        height: 5px;
+        margin-top: 4.5px;
+        margin-bottom:  11px;
+    }
+
+    .sum input:checked::before {
+        top: -3px;
+        right: 2.625px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .input-value {
+        margin-top: 23px;
+        height: 40px;
+        width: 178px;
+    }
+
+    .input-value input {
+        padding-left: 5px;
+    }
+
+    .radio {
+        margin-bottom: 26px;
+    }
+
+    .share {
+        font-size: 15.95px;
+        line-height: 140%;
+        margin-bottom: 20px;
+    }
+
+    .pick-friend {
+        margin-bottom: 22px;
+    }
+
+            /* FOOTER STYLE */
+
+    .footer {
+        height: 100%;
+    }
+
+    .wrapper1 {
+        gap: 0;
+        justify-content: center;
+        margin-top: 19px;
+        margin-bottom: 20px;
+    }
+
+    .subscribe {
+        display: none;
+    }
+
+    .social-tablet {
+        display: none;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer .logo {
+        width: 100%;
+        text-align: center;
+        border: none;
+        padding-left: 4.75px;
+        padding-top: 1px;
+        padding-bottom: 5px;
+    }
+
+    .footer .logo-text {
+        display: none;
+    }
+
+    .footer .logo-text-mobile {
+        display: block;
+        font-family: 'Roboto-regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 19.0145px;
+        line-height: 120%;
+        font-weight: inherit;
+        margin: 0;
+    }
+
+    .footer .icon-logo:before {
+        top: 0px;
+        left: 162.5px;
+        width: 11px;
+        height: 18px;
+    }
+
+    .button-container {
+        width: 100%;
+        gap: 5px;
+    }
+
+    .wrapper2 {
+        margin-top: 0px;
+    }
+
+    .links {
+        margin: 0;
+        gap: 37px;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .social-mobile {
+        display: flex;
+        gap: 55px;
+        margin-bottom: 22px;
+    }
+
+    .facebook {
+        height: 28px;
+    }
+
+    .facebook::before {
+        top: 0;
+        right: 0;
+        left: -14px;
+    }
+
+    .facebook::after {
+        bottom: 8px;
+        left: -5px;
+    }
+
+    .twitter {
+        height: 28px;
+    }
+
+    .twitter::before {
+        top: 0;
+        right: 0;
+        left: -15px;
+    }
+
+    .twitter::after {
+        bottom: 6px;
+        left: -10px;
+    }
+
+    .inst {
+        height: 28px;
+    }
+
+    .inst::before {
+        top: 0;
+        right: 0;
+        left: -13px;
+    }
+
+    .inst::after {
+        bottom: 7px;
+        left: -8px;
+    }
+
+    .yt {
+        height: 28px;
+    }
+
+    .yt::before {
+        top: 0;
+        right: 0;
+        left: -11px;
+    }
+
+    .yt::after {
+        bottom: 8.5px;
+        left: -6.5px;
+    }
+
+    .ft-btn {
+        width: 100%;
+    }
+
+    .footer-button .button-square {
+        width: 100%;
+    }
+
+    .footer-button {
+        width: 100%;
+    }
+
+    .copy {
+        margin-bottom: 22px;
+        font-size: 15px;
+        line-height: 120%;
+    }
+
+    .copyright {
+        margin-top: 12px;
+    }
+
+    .footer-nav .links{
+        gap: 30px;
+        margin-bottom: 23px;
+    }
+
+
+}
